@@ -1,3 +1,6 @@
-[build]
-  command = "cp -r ./ ./build && npm run build"
-  publish = "build"
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "*"
+    Access-Control-Allow-Headers = "*"
